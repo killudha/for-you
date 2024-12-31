@@ -31,6 +31,23 @@
             margin: 20px 0;
             animation: fadeInUp 2s ease-in-out;
         }
+        .interaction {
+            margin: 30px 0;
+        }
+        .interaction button {
+            font-size: 1em;
+            padding: 10px 20px;
+            margin: 10px;
+            color: #fff;
+            background-color: #005f99;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .interaction button:hover {
+            background-color: #003f6b;
+        }
         footer {
             padding: 10px 20px;
             background-color: #005f99;
@@ -60,6 +77,11 @@
             }
         }
     </style>
+    <script>
+        function redirectToNewYear() {
+            window.location.href = "happy_new_year.html";
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -67,6 +89,11 @@
     </header>
     <div class="content">
         <p>Semoga tahun baru ini membawa kebahagiaan, cinta, dan keberkahan untuk kita berdua. Aku sangat bersyukur memiliki kamu di hidupku ❤️</p>
+        <div class="interaction">
+            <p>Did you have fun this 2024?</p>
+            <button onclick="redirectToNewYear()">Yes</button>
+            <button onclick="redirectToNewYear()">Yes</button>
+        </div>
     </div>
     <footer>
         <p>With love, dari Dhanny untuk Sayangkuu ❤️</p>
